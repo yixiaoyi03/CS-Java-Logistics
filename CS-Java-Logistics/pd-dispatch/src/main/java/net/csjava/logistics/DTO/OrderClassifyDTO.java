@@ -1,6 +1,10 @@
 package net.csjava.logistics.DTO;
 
 
+import com.baomidou.mybatisplus.core.toolkit.StringUtils;
+import lombok.Builder;
+import lombok.Data;
+import net.csjava.logistics.entity.Order;
 
 /**
  * 封装原始订单信息

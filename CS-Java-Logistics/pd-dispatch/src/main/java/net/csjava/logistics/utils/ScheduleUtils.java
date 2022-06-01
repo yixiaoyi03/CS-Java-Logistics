@@ -1,6 +1,5 @@
 package net.csjava.logistics.utils;
-
-import com.itheima.pinda.common.exception.PdException;
+import net.csjava.logistics.common.exception.PdException;
 import net.csjava.logistics.entity.ScheduleJobEntity;
 import net.csjava.logistics.enums.ScheduleStatus;
 import net.csjava.logistics.execute.ScheduleJob;

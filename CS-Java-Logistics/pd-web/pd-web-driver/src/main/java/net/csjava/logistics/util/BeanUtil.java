@@ -1,21 +1,12 @@
 package net.csjava.logistics.util;
-
-import com.itheima.pinda.authority.api.AreaApi;
-import com.itheima.pinda.authority.api.OrgApi;
-import com.itheima.pinda.authority.api.RoleApi;
-import com.itheima.pinda.authority.dto.auth.RoleDTO;
-import com.itheima.pinda.authority.entity.auth.User;
-import com.itheima.pinda.authority.entity.common.Area;
-import com.itheima.pinda.authority.entity.core.Org;
-import com.itheima.pinda.authority.enumeration.common.StaticStation;
-import com.itheima.pinda.authority.enumeration.core.OrgType;
-import com.itheima.pinda.base.R;
-import com.itheima.pinda.common.utils.Constant;
-import com.itheima.pinda.vo.*;
+import net.csjava.logistics.common.utils.Constant;
 import net.csjava.logistics.vo.*;
 import org.springframework.beans.BeanUtils;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class BeanUtil {

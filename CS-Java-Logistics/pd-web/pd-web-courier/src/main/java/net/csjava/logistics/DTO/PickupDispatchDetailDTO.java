@@ -1,16 +1,15 @@
 package net.csjava.logistics.DTO;
 
-import com.itheima.pinda.DTO.base.GoodsTypeDto;
-import com.itheima.pinda.authority.entity.common.Area;
-import com.itheima.pinda.entity.Member;
+
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import net.csjava.logistics.DTO.base.GoodsTypeDto;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.util.Map;
+
 
 @Data
 @NoArgsConstructor

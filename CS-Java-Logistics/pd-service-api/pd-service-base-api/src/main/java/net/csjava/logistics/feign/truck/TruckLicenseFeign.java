@@ -1,6 +1,7 @@
 package net.csjava.logistics.feign.truck;
 
-import com.itheima.pinda.DTO.truck.TruckLicenseDto;
+
+import net.csjava.logistics.DTO.truck.TruckLicenseDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 import springfox.documentation.annotations.ApiIgnore;

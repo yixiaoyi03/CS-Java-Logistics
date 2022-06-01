@@ -1,22 +1,10 @@
-/**
- * Copyright (c) 2019 联智合创 All rights reserved.
- * <p>
- * http://www.witlinked.com
- * <p>
- * 版权所有，侵权必究！
- */
-
 package net.csjava.logistics.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import net.csjava.logistics.DTO.OrgJobTreeDTO;
 import net.csjava.logistics.DTO.ScheduleJobDTO;
-import com.itheima.pinda.authority.api.OrgApi;
-import com.itheima.pinda.authority.dto.core.OrgTreeDTO;
-import com.itheima.pinda.base.R;
 import net.csjava.logistics.entity.ScheduleJobEntity;
 import net.csjava.logistics.enums.ScheduleStatus;
 import net.csjava.logistics.mapper.ScheduleJobMapper;
@@ -29,7 +17,6 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import java.util.*;
 import java.util.stream.Collectors;
 

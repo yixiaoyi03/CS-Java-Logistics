@@ -1,11 +1,10 @@
 package net.csjava.logistics.service.impl;
-
-import com.itheima.pinda.common.utils.Result;
-import com.itheima.pinda.entity.Member;
-import com.itheima.pinda.feign.MemberFeign;
+import lombok.extern.slf4j.Slf4j;
+import net.csjava.logistics.common.utils.Result;
+import net.csjava.logistics.entity.Member;
+import net.csjava.logistics.feign.MemberFeign;
 import net.csjava.logistics.feign.UserClient;
 import net.csjava.logistics.service.IMemberService;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

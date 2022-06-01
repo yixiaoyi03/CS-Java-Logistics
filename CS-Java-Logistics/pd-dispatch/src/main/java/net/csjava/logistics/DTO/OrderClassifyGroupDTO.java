@@ -1,6 +1,13 @@
 package net.csjava.logistics.DTO;
 
 
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import net.csjava.logistics.entity.Order;
+
+import java.util.List;
+
 @Data
 @Builder
 @NoArgsConstructor

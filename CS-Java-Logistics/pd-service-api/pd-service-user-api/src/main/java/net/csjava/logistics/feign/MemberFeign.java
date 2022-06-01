@@ -1,8 +1,8 @@
 package net.csjava.logistics.feign;
 
-import com.itheima.pinda.common.utils.PageResponse;
-import com.itheima.pinda.common.utils.Result;
-import com.itheima.pinda.entity.Member;
+import net.csjava.logistics.common.utils.PageResponse;
+import net.csjava.logistics.common.utils.Result;
+import net.csjava.logistics.entity.Member;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 import springfox.documentation.annotations.ApiIgnore;
@@ -19,7 +19,7 @@ public interface MemberFeign {
      * @return
      */
     @GetMapping("page")
-    PageResponse<Member> page(@RequestParam("page") Integer page,@RequestParam("pageSize") Integer pageSize);
+    PageResponse<Member> page(@RequestParam("page") Integer page, @RequestParam("pageSize") Integer pageSize);
 
     /**
      * 新增

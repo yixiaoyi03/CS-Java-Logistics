@@ -1,8 +1,9 @@
 package net.csjava.logistics.service;
 
-import com.itheima.pinda.DTO.AppDriverQueryDTO;
-import com.itheima.pinda.DTO.DriverJobDTO;
-import com.itheima.pinda.common.utils.PageResponse;
+
+import net.csjava.logistics.DTO.AppDriverQueryDTO;
+import net.csjava.logistics.DTO.DriverJobDTO;
+import net.csjava.logistics.common.utils.PageResponse;
 
 public interface DriverService {
     PageResponse<DriverJobDTO> findByPage(AppDriverQueryDTO dto);

@@ -1,7 +1,7 @@
 package net.csjava.logistics.DTO;
 
+import lombok.Data;
 import net.csjava.logistics.entity.CacheLineEntity;
-
 
 import java.util.List;
 

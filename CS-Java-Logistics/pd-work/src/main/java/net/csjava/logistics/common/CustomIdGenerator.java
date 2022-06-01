@@ -1,7 +1,7 @@
 package net.csjava.logistics.common;
 
 import com.baomidou.mybatisplus.core.incrementer.IdentifierGenerator;
-import com.itheima.pinda.common.utils.IdWorker;
+import net.csjava.logistics.common.utils.IdWorker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;

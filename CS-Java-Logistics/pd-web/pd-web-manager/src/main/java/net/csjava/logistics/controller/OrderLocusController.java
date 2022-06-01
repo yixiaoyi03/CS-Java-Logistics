@@ -1,25 +1,15 @@
-/**
- * Copyright (c) 2019 联智合创 All rights reserved.
- * <p>
- * http://www.witlinked.com
- * <p>
- * 版权所有，侵权必究！
- */
-
 package net.csjava.logistics.controller;
-
-import com.itheima.pinda.DTO.TaskPickupDispatchDTO;
-import com.itheima.pinda.DTO.TaskTransportDTO;
-import com.itheima.pinda.DTO.TransportOrderDTO;
-import com.itheima.pinda.authority.api.OrgApi;
-import com.itheima.pinda.enums.pickuptask.PickupDispatchTaskType;
-import com.itheima.pinda.feign.PickupDispatchTaskFeign;
-import com.itheima.pinda.feign.TransportOrderFeign;
-import com.itheima.pinda.feign.TransportTaskFeign;
-import net.csjava.logistics.vo.oms.OrderLocusVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
+import net.csjava.logistics.DTO.TaskPickupDispatchDTO;
+import net.csjava.logistics.DTO.TaskTransportDTO;
+import net.csjava.logistics.DTO.TransportOrderDTO;
+import net.csjava.logistics.enums.pickuptask.PickupDispatchTaskType;
+import net.csjava.logistics.feign.PickupDispatchTaskFeign;
+import net.csjava.logistics.feign.TransportOrderFeign;
+import net.csjava.logistics.feign.TransportTaskFeign;
+import net.csjava.logistics.vo.oms.OrderLocusVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -1,19 +1,13 @@
 package net.csjava.logistics.controller;
-
-import com.itheima.pinda.authority.api.OrgApi;
-import com.itheima.pinda.authority.api.RoleApi;
-import com.itheima.pinda.authority.api.UserApi;
-import com.itheima.pinda.authority.entity.auth.User;
-import com.itheima.pinda.base.R;
-import com.itheima.pinda.common.utils.PageResponse;
-import net.csjava.logistics.util.BeanUtil;
-import net.csjava.logistics.vo.base.userCenter.MessageVo;
-import net.csjava.logistics.vo.base.userCenter.SysUserVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.java.Log;
+import net.csjava.logistics.common.utils.PageResponse;
+import net.csjava.logistics.util.BeanUtil;
+import net.csjava.logistics.vo.base.userCenter.MessageVo;
+import net.csjava.logistics.vo.base.userCenter.SysUserVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

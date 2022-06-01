@@ -1,8 +1,8 @@
 package net.csjava.logistics.feign;
 
-import com.itheima.pinda.common.utils.PageResponse;
-import com.itheima.pinda.common.utils.Result;
-import com.itheima.pinda.entity.AddressBook;
+import net.csjava.logistics.common.utils.PageResponse;
+import net.csjava.logistics.common.utils.Result;
+import net.csjava.logistics.entity.AddressBook;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,7 +19,7 @@ public interface AddressBookFeign {
      * @return
      */
     @GetMapping("page")
-    PageResponse<AddressBook> page(@RequestParam("page") Integer page,@RequestParam("pageSize") Integer pageSize, @RequestParam("userId")String userId,@RequestParam("keyword") String keyword);
+    PageResponse<AddressBook> page(@RequestParam("page") Integer page, @RequestParam("pageSize") Integer pageSize, @RequestParam("userId")String userId, @RequestParam("keyword") String keyword);
 
     /**
      * 新增

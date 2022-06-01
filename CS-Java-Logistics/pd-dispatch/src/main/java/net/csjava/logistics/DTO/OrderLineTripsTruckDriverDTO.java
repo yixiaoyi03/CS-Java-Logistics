@@ -1,6 +1,8 @@
 package net.csjava.logistics.DTO;
 
 
+import lombok.Data;
+
 import java.util.List;
 
 @Data

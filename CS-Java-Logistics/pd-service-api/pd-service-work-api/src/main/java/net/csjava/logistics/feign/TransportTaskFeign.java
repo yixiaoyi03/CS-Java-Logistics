@@ -1,7 +1,6 @@
 package net.csjava.logistics.feign;
-
-import com.itheima.pinda.DTO.TaskTransportDTO;
-import com.itheima.pinda.common.utils.PageResponse;
+import net.csjava.logistics.DTO.TaskTransportDTO;
+import net.csjava.logistics.common.utils.PageResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 

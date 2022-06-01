@@ -1,7 +1,8 @@
 package net.csjava.logistics.feign.agency;
 
-import com.itheima.pinda.DTO.angency.AgencyScopeDto;
-import com.itheima.pinda.common.utils.Result;
+
+import net.csjava.logistics.DTO.angency.AgencyScopeDto;
+import net.csjava.logistics.common.utils.Result;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 import springfox.documentation.annotations.ApiIgnore;

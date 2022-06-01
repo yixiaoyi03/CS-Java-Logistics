@@ -1,7 +1,6 @@
 package net.csjava.logistics.DTO;
 
-import com.itheima.pinda.authority.entity.common.Area;
-import com.itheima.pinda.utils.DateUtils;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;

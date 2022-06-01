@@ -1,7 +1,7 @@
 package net.csjava.logistics.feign;
 
-import com.itheima.pinda.DTO.OrderCargoDto;
-import com.itheima.pinda.common.utils.Result;
+import net.csjava.logistics.DTO.OrderCargoDto;
+import net.csjava.logistics.common.utils.Result;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 import springfox.documentation.annotations.ApiIgnore;

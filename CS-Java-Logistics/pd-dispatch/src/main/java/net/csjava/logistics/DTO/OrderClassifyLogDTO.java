@@ -1,6 +1,8 @@
 package net.csjava.logistics.DTO;
 
+import lombok.Data;
 import net.csjava.logistics.entity.OrderClassifyEntity;
+
 import java.util.LinkedHashSet;
 import java.util.Set;
 

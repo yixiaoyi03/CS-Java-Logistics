@@ -1,22 +1,14 @@
 package net.csjava.logistics.future;
 
-import com.itheima.pinda.DTO.TaskTransportDTO;
-import com.itheima.pinda.DTO.transportline.TransportTripsDto;
-import com.itheima.pinda.authority.api.AreaApi;
-import com.itheima.pinda.authority.api.OrgApi;
-import com.itheima.pinda.authority.api.UserApi;
-import com.itheima.pinda.authority.entity.auth.User;
-import com.itheima.pinda.authority.entity.common.Area;
-import com.itheima.pinda.authority.entity.core.Org;
-import com.itheima.pinda.authority.enumeration.common.StaticStation;
-import com.itheima.pinda.base.R;
-import com.itheima.pinda.common.utils.Constant;
-import com.itheima.pinda.feign.TransportTaskFeign;
-import com.itheima.pinda.feign.transportline.TransportTripsFeign;
+
+import net.csjava.logistics.DTO.TaskTransportDTO;
+import net.csjava.logistics.DTO.transportline.TransportTripsDto;
+import net.csjava.logistics.common.utils.Constant;
+import net.csjava.logistics.feign.TransportTaskFeign;
+import net.csjava.logistics.feign.transportline.TransportTripsFeign;
 import net.csjava.logistics.util.BeanUtil;
 import net.csjava.logistics.vo.AreaSimpleVo;
 import net.csjava.logistics.vo.SysUserVo;
-import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;

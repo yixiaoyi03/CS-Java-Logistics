@@ -1,20 +1,17 @@
 package net.csjava.logistics.controller;
-
-
-import net.csjava.logistics.DTO.CarInfoDTO;
-import com.itheima.pinda.DTO.truck.TruckDto;
-import com.itheima.pinda.DTO.truck.TruckLicenseDto;
-import com.itheima.pinda.DTO.truck.TruckTypeDto;
-import com.itheima.pinda.common.utils.Result;
-import com.itheima.pinda.feign.truck.TruckFeign;
-import com.itheima.pinda.feign.truck.TruckLicenseFeign;
-import com.itheima.pinda.feign.truck.TruckTypeFeign;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.StringUtils;
+import net.csjava.logistics.DTO.CarInfoDTO;
+import net.csjava.logistics.DTO.truck.TruckDto;
+import net.csjava.logistics.DTO.truck.TruckLicenseDto;
+import net.csjava.logistics.DTO.truck.TruckTypeDto;
+import net.csjava.logistics.common.utils.Result;
+import net.csjava.logistics.feign.truck.TruckFeign;
+import net.csjava.logistics.feign.truck.TruckLicenseFeign;
+import net.csjava.logistics.feign.truck.TruckTypeFeign;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

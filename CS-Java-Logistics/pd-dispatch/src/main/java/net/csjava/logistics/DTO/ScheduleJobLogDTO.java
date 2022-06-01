@@ -1,6 +1,8 @@
 package net.csjava.logistics.DTO;
 
 
+import io.swagger.annotations.ApiModel;
+import lombok.Data;
 import net.csjava.logistics.entity.ScheduleJobLogEntity;
 
 import java.util.List;

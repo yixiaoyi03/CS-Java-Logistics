@@ -1,6 +1,5 @@
 package net.csjava.logistics.service;
-
-import com.itheima.pinda.entity.Member;
+import net.csjava.logistics.entity.Member;
 
 public interface IMemberService {
     Member detail(String userId);

@@ -1,18 +1,14 @@
 package net.csjava.logistics.future;
 
-import com.itheima.pinda.DTO.OrderCargoDto;
-import com.itheima.pinda.DTO.TaskPickupDispatchDTO;
-import com.itheima.pinda.DTO.TransportOrderDTO;
-import com.itheima.pinda.authority.api.AreaApi;
-import com.itheima.pinda.authority.api.OrgApi;
-import com.itheima.pinda.authority.entity.common.Area;
-import com.itheima.pinda.authority.entity.core.Org;
-import com.itheima.pinda.base.R;
-import com.itheima.pinda.enums.pickuptask.PickupDispatchTaskStatus;
-import com.itheima.pinda.feign.CargoFeign;
-import com.itheima.pinda.feign.PickupDispatchTaskFeign;
-import com.itheima.pinda.feign.TransportOrderFeign;
+
 import lombok.extern.slf4j.Slf4j;
+import net.csjava.logistics.DTO.OrderCargoDto;
+import net.csjava.logistics.DTO.TaskPickupDispatchDTO;
+import net.csjava.logistics.DTO.TransportOrderDTO;
+import net.csjava.logistics.enums.pickuptask.PickupDispatchTaskStatus;
+import net.csjava.logistics.feign.CargoFeign;
+import net.csjava.logistics.feign.PickupDispatchTaskFeign;
+import net.csjava.logistics.feign.TransportOrderFeign;
 import org.springframework.util.CollectionUtils;
 
 import java.util.*;

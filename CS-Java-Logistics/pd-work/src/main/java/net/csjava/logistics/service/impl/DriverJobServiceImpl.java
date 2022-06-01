@@ -2,14 +2,14 @@ package net.csjava.logistics.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import net.csjava.logistics.common.CustomIdGenerator;
 import net.csjava.logistics.entity.DriverJob;
-import com.itheima.pinda.enums.driverjob.DriverJobStatus;
+import net.csjava.logistics.enums.driverjob.DriverJobStatus;
 import net.csjava.logistics.mapper.DriverJobMapper;
 import net.csjava.logistics.service.IDriverJobService;
-import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,8 +17,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
-public class DriverJobServiceImpl extends
-        ServiceImpl<DriverJobMapper, DriverJob> implements IDriverJobService {
+public class DriverJobServiceImpl extends ServiceImpl<DriverJobMapper, DriverJob> implements IDriverJobService {
     @Autowired
     private CustomIdGenerator idGenerator;
 

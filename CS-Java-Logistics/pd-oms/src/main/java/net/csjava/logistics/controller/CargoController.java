@@ -1,8 +1,8 @@
 package net.csjava.logistics.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.itheima.pinda.DTO.OrderCargoDto;
-import com.itheima.pinda.common.utils.Result;
+import net.csjava.logistics.DTO.OrderCargoDto;
+import net.csjava.logistics.common.utils.Result;
 import net.csjava.logistics.entity.OrderCargo;
 import net.csjava.logistics.service.IOrderCargoService;
 import org.springframework.beans.BeanUtils;

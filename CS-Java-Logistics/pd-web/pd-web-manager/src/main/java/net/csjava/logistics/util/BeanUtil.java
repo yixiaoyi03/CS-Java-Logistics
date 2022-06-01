@@ -1,46 +1,36 @@
 package net.csjava.logistics.util;
-
-import com.itheima.pinda.DTO.*;
-import com.itheima.pinda.DTO.angency.FleetDto;
-import com.itheima.pinda.DTO.transportline.TransportTripsDto;
-import com.itheima.pinda.DTO.truck.TruckDto;
-import com.itheima.pinda.DTO.user.TruckDriverDto;
-import com.itheima.pinda.authority.api.AreaApi;
-import com.itheima.pinda.authority.api.OrgApi;
-import com.itheima.pinda.authority.api.RoleApi;
-import com.itheima.pinda.authority.api.UserApi;
-import com.itheima.pinda.authority.dto.auth.RoleDTO;
-import com.itheima.pinda.authority.entity.auth.User;
-import com.itheima.pinda.authority.entity.common.Area;
-import com.itheima.pinda.authority.entity.core.Org;
-import com.itheima.pinda.authority.enumeration.common.StaticStation;
-import com.itheima.pinda.authority.enumeration.core.OrgType;
-import com.itheima.pinda.base.R;
-import com.itheima.pinda.common.utils.Constant;
-import com.itheima.pinda.feign.OrderFeign;
-import com.itheima.pinda.feign.TransportOrderFeign;
-import com.itheima.pinda.feign.TransportTaskFeign;
-import com.itheima.pinda.feign.agency.FleetFeign;
-import com.itheima.pinda.feign.transportline.TransportTripsFeign;
-import com.itheima.pinda.feign.truck.TruckFeign;
+import net.csjava.logistics.DTO.*;
+import net.csjava.logistics.DTO.angency.FleetDto;
+import net.csjava.logistics.DTO.transportline.TransportTripsDto;
+import net.csjava.logistics.DTO.truck.TruckDto;
+import net.csjava.logistics.DTO.user.TruckDriverDto;
+import net.csjava.logistics.common.utils.Constant;
+import net.csjava.logistics.feign.OrderFeign;
+import net.csjava.logistics.feign.TransportOrderFeign;
+import net.csjava.logistics.feign.TransportTaskFeign;
+import net.csjava.logistics.feign.agency.FleetFeign;
+import net.csjava.logistics.feign.transportline.TransportTripsFeign;
+import net.csjava.logistics.feign.truck.TruckFeign;
+import net.csjava.logistics.vo.base.AreaSimpleVo;
 import net.csjava.logistics.vo.base.angency.AgencySimpleVo;
 import net.csjava.logistics.vo.base.angency.AgencyVo;
 import net.csjava.logistics.vo.base.angency.RoleVo;
-import net.csjava.logistics.vo.base.AreaSimpleVo;
 import net.csjava.logistics.vo.base.transforCenter.business.DriverVo;
 import net.csjava.logistics.vo.base.transforCenter.business.FleetVo;
-import net.csjava.logistics.vo.oms.OrderVo;
 import net.csjava.logistics.vo.base.transforCenter.business.TransportTripsVo;
 import net.csjava.logistics.vo.base.transforCenter.business.TruckVo;
 import net.csjava.logistics.vo.base.userCenter.SysUserVo;
+import net.csjava.logistics.vo.oms.OrderVo;
 import net.csjava.logistics.vo.work.DriverJobVo;
 import net.csjava.logistics.vo.work.TaskPickupDispatchVo;
 import net.csjava.logistics.vo.work.TaskTransportVo;
 import net.csjava.logistics.vo.work.TransportOrderVo;
-import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.BeanUtils;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class BeanUtil {
@@ -440,7 +430,7 @@ public class BeanUtil {
         return vo;
     }
 
-    public static DriverVo parseTruckDriverDto2Vo(TruckDriverDto dto, UserApi userApi, FleetFeign fleetFeign,OrgApi orgApi) {
+    public static DriverVo parseTruckDriverDto2Vo(TruckDriverDto dto, UserApi userApi, FleetFeign fleetFeign, OrgApi orgApi) {
         DriverVo vo = new DriverVo();
         if (StringUtils.isNotEmpty(dto.getUserId()) && userApi != null) {
             R<User> userResult = userApi.get(Long.valueOf(dto.getUserId()));

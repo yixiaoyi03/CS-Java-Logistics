@@ -1,11 +1,9 @@
 package net.csjava.logistics.DTO;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-import net.csjava.logistics.entity.AddressBook;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import org.springframework.format.annotation.DateTimeFormat;
+import net.csjava.logistics.entity.AddressBook;
 
 /**
  * @author diesel

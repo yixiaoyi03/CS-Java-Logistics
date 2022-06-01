@@ -1,19 +1,17 @@
 package net.csjava.logistics.controller;
-
-import com.itheima.pinda.common.utils.Result;
-import com.itheima.pinda.DTO.OrderCargoDto;
-import com.itheima.pinda.DTO.base.GoodsTypeDto;
-import com.itheima.pinda.feign.CargoFeign;
-import com.itheima.pinda.feign.common.GoodsTypeFeign;
-import net.csjava.logistics.vo.oms.OrderCargoVo;
-import net.csjava.logistics.vo.oms.OrderVo;
-import net.csjava.logistics.vo.base.businessHall.GoodsTypeVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.java.Log;
-import org.apache.commons.lang.StringUtils;
+import net.csjava.logistics.DTO.OrderCargoDto;
+import net.csjava.logistics.DTO.base.GoodsTypeDto;
+import net.csjava.logistics.common.utils.Result;
+import net.csjava.logistics.feign.CargoFeign;
+import net.csjava.logistics.feign.common.GoodsTypeFeign;
+import net.csjava.logistics.vo.base.businessHall.GoodsTypeVo;
+import net.csjava.logistics.vo.oms.OrderCargoVo;
+import net.csjava.logistics.vo.oms.OrderVo;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

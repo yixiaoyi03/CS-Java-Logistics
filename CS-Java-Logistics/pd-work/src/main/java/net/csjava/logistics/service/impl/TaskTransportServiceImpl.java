@@ -4,12 +4,12 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.itheima.pinda.DTO.TaskTransportDTO;
+import net.csjava.logistics.DTO.TaskTransportDTO;
 import net.csjava.logistics.common.CustomIdGenerator;
 import net.csjava.logistics.entity.TaskTransport;
-import com.itheima.pinda.enums.transporttask.TransportTaskAssignedStatus;
-import com.itheima.pinda.enums.transporttask.TransportTaskLoadingStatus;
-import com.itheima.pinda.enums.transporttask.TransportTaskStatus;
+import net.csjava.logistics.enums.transporttask.TransportTaskAssignedStatus;
+import net.csjava.logistics.enums.transporttask.TransportTaskLoadingStatus;
+import net.csjava.logistics.enums.transporttask.TransportTaskStatus;
 import net.csjava.logistics.mapper.TaskTransportMapper;
 import net.csjava.logistics.service.ITaskTransportService;
 import org.apache.commons.lang.StringUtils;
@@ -28,8 +28,7 @@ import java.util.List;
  * @since 2019-12-29
  */
 @Service
-public class TaskTransportServiceImpl extends
-        ServiceImpl<TaskTransportMapper, TaskTransport> implements ITaskTransportService {
+public class TaskTransportServiceImpl extends ServiceImpl<TaskTransportMapper, TaskTransport> implements ITaskTransportService {
     @Autowired
     private CustomIdGenerator idGenerator;
 

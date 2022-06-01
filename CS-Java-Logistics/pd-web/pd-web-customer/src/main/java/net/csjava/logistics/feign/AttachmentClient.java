@@ -1,6 +1,5 @@
 package net.csjava.logistics.feign;
 
-import com.itheima.pinda.authority.api.hystrix.UserApiFallback;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PostMapping;

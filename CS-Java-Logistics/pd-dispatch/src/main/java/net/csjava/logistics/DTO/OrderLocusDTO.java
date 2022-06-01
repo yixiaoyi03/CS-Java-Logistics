@@ -1,6 +1,7 @@
 package net.csjava.logistics.DTO;
 
 
+import lombok.Data;
 
 @Data
 public class OrderLocusDTO {

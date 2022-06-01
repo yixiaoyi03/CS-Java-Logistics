@@ -1,12 +1,11 @@
 package net.csjava.logistics.DTO;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.itheima.pinda.authority.entity.common.Area;
-import com.itheima.pinda.common.utils.DateUtils;
-import com.itheima.pinda.enums.pickuptask.PickupDispatchTaskType;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
+import net.csjava.logistics.common.utils.DateUtils;
+import net.csjava.logistics.enums.pickuptask.PickupDispatchTaskType;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.format.annotation.DateTimeFormat;
 

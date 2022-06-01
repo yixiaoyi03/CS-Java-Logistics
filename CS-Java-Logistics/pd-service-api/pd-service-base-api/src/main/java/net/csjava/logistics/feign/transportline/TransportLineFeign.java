@@ -1,8 +1,8 @@
 package net.csjava.logistics.feign.transportline;
 
-import com.itheima.pinda.DTO.transportline.TransportLineDto;
-import com.itheima.pinda.common.utils.PageResponse;
-import com.itheima.pinda.common.utils.Result;
+import net.csjava.logistics.DTO.transportline.TransportLineDto;
+import net.csjava.logistics.common.utils.PageResponse;
+import net.csjava.logistics.common.utils.Result;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 import springfox.documentation.annotations.ApiIgnore;

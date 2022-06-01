@@ -1,8 +1,9 @@
 package net.csjava.logistics.feign.agency;
 
-import com.itheima.pinda.common.utils.PageResponse;
-import com.itheima.pinda.common.utils.Result;
-import com.itheima.pinda.DTO.angency.FleetDto;
+
+import net.csjava.logistics.DTO.angency.FleetDto;
+import net.csjava.logistics.common.utils.PageResponse;
+import net.csjava.logistics.common.utils.Result;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 import springfox.documentation.annotations.ApiIgnore;
@@ -55,7 +56,7 @@ public interface FleetFeign {
      * @return 车队列表
      */
     @GetMapping("")
-    List<FleetDto> findAll(@RequestParam(value = "ids",required = false) List<String> ids,@RequestParam(value = "agencyId",required = false) String agencyId);
+    List<FleetDto> findAll(@RequestParam(value = "ids",required = false) List<String> ids, @RequestParam(value = "agencyId",required = false) String agencyId);
 
     /**
      * 更新车队信息

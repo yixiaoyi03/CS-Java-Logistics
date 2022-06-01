@@ -1,28 +1,18 @@
 package net.csjava.logistics.controller;
-
-
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.itheima.pinda.authority.api.AreaApi;
-import com.itheima.pinda.authority.api.OrgApi;
-import com.itheima.pinda.authority.entity.common.Area;
-import com.itheima.pinda.base.R;
-import com.itheima.pinda.common.utils.PageResponse;
-import com.itheima.pinda.common.utils.Result;
-import net.csjava.logistics.future.PdCompletableFuture;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import lombok.SneakyThrows;
 import lombok.extern.log4j.Log4j2;
-import org.springframework.util.ObjectUtils;
-import org.springframework.util.StringUtils;
+import net.csjava.logistics.common.utils.PageResponse;
+import net.csjava.logistics.common.utils.Result;
+import net.csjava.logistics.future.PdCompletableFuture;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.*;
-import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
 /**
@@ -88,7 +78,7 @@ public class AgencyController {
             return newItem;
         }).collect(Collectors.toList());
 
-        return Result.ok().put("data",PageResponse.<Map>builder()
+        return Result.ok().put("data", PageResponse.<Map>builder()
                 .items(records)
                 .pagesize(pagesize)
                 .page(page)

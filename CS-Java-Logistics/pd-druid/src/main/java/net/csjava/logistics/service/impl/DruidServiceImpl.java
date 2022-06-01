@@ -1,9 +1,9 @@
 package net.csjava.logistics.service.impl;
 
-import com.itheima.pinda.common.utils.Result;
+import lombok.extern.slf4j.Slf4j;
+import net.csjava.logistics.common.utils.Result;
 import net.csjava.logistics.mapper.MessageMapper;
 import net.csjava.logistics.service.DruidService;
-import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

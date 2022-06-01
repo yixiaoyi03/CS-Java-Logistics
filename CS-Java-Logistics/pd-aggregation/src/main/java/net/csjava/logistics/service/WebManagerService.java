@@ -1,14 +1,14 @@
 package net.csjava.logistics.service;
 
-import com.itheima.pinda.DTO.DriverJobDTO;
-import com.itheima.pinda.DTO.TaskPickupDispatchDTO;
-import com.itheima.pinda.DTO.TaskTransportDTO;
-import com.itheima.pinda.DTO.TransportOrderDTO;
-import com.itheima.pinda.DTO.webManager.DriverJobQueryDTO;
-import com.itheima.pinda.DTO.webManager.TaskPickupDispatchQueryDTO;
-import com.itheima.pinda.DTO.webManager.TaskTransportQueryDTO;
-import com.itheima.pinda.DTO.webManager.TransportOrderQueryDTO;
-import com.itheima.pinda.common.utils.PageResponse;
+import net.csjava.logistics.DTO.DriverJobDTO;
+import net.csjava.logistics.DTO.TaskPickupDispatchDTO;
+import net.csjava.logistics.DTO.TaskTransportDTO;
+import net.csjava.logistics.DTO.TransportOrderDTO;
+import net.csjava.logistics.DTO.webManager.DriverJobQueryDTO;
+import net.csjava.logistics.DTO.webManager.TaskPickupDispatchQueryDTO;
+import net.csjava.logistics.DTO.webManager.TaskTransportQueryDTO;
+import net.csjava.logistics.DTO.webManager.TransportOrderQueryDTO;
+import net.csjava.logistics.common.utils.PageResponse;
 
 public interface WebManagerService {
     /**

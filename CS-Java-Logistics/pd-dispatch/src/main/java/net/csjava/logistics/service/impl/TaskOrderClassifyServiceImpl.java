@@ -1,31 +1,23 @@
 package net.csjava.logistics.service.impl;
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.google.common.collect.Maps;
+
+import lombok.SneakyThrows;
+import lombok.extern.slf4j.Slf4j;
 import net.csjava.logistics.DTO.OrderClassifyDTO;
 import net.csjava.logistics.DTO.OrderClassifyGroupDTO;
-import com.itheima.pinda.DTO.OrderSearchDTO;
-import com.itheima.pinda.DTO.angency.AgencyScopeDto;
-import com.itheima.pinda.authority.api.AreaApi;
-import com.itheima.pinda.authority.entity.common.Area;
-import com.itheima.pinda.base.R;
-import com.itheima.pinda.common.utils.EntCoordSyncJob;
-import com.itheima.pinda.common.utils.Result;
-import com.itheima.pinda.entity.Order;
-import com.itheima.pinda.enums.OrderStatus;
-import com.itheima.pinda.feign.OrderFeign;
-import com.itheima.pinda.feign.agency.AgencyScopeFeign;
+import net.csjava.logistics.DTO.angency.AgencyScopeDto;
+import net.csjava.logistics.common.utils.Result;
+import net.csjava.logistics.entity.Order;
+import net.csjava.logistics.feign.OrderFeign;
+import net.csjava.logistics.feign.agency.AgencyScopeFeign;
 import net.csjava.logistics.service.IOrderClassifyOrderService;
 import net.csjava.logistics.service.IOrderClassifyService;
 import net.csjava.logistics.service.ITaskOrderClassifyService;
-import lombok.SneakyThrows;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.ObjectUtils;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.util.CollectionUtils;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
@@ -129,7 +121,7 @@ public class TaskOrderClassifyServiceImpl implements ITaskOrderClassifyService {
      * @param location
      * @return
      */
-    private Result caculate(List<AgencyScopeDto> agencyScopes,String location) {
+    private Result caculate(List<AgencyScopeDto> agencyScopes, String location) {
         return null;
     }
 

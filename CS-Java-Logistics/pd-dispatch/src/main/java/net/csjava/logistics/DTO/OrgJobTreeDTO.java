@@ -1,6 +1,8 @@
 package net.csjava.logistics.DTO;
 
 
+import lombok.Data;
+
 @Data
 public class OrgJobTreeDTO extends OrgTreeDTO {
 

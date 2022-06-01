@@ -1,41 +1,28 @@
 package net.csjava.logistics.controller;
 
-import com.alibaba.fastjson.JSON;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.google.common.collect.Lists;
-import com.itheima.pinda.authority.api.AreaApi;
-import com.itheima.pinda.authority.api.OrgApi;
-import com.itheima.pinda.authority.api.RoleApi;
-import com.itheima.pinda.authority.api.UserApi;
-import com.itheima.pinda.authority.dto.core.OrgTreeDTO;
-import com.itheima.pinda.authority.entity.auth.User;
-import com.itheima.pinda.authority.entity.common.Area;
-import com.itheima.pinda.authority.entity.core.Org;
-import com.itheima.pinda.authority.enumeration.core.OrgType;
-import com.itheima.pinda.base.R;
-import com.itheima.pinda.common.utils.EntCoordSyncJob;
-import com.itheima.pinda.common.utils.PageResponse;
-import com.itheima.pinda.common.utils.Result;
-import com.itheima.pinda.DTO.angency.AgencyScopeDto;
-import com.itheima.pinda.feign.agency.AgencyScopeFeign;
-import net.csjava.logistics.util.BeanUtil;
-import net.csjava.logistics.vo.base.AreaSimpleVo;
-import com.itheima.pinda.vo.base.angency.*;
-import net.csjava.logistics.vo.base.angency.AgencyScopeVo;
-import net.csjava.logistics.vo.base.angency.AgencySimpleVo;
-import net.csjava.logistics.vo.base.angency.AgencyVo;
-import net.csjava.logistics.vo.base.userCenter.SysUserVo;
+
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.java.Log;
-import org.apache.commons.lang.StringUtils;
+import net.csjava.logistics.DTO.angency.AgencyScopeDto;
+import net.csjava.logistics.common.utils.EntCoordSyncJob;
+import net.csjava.logistics.common.utils.PageResponse;
+import net.csjava.logistics.common.utils.Result;
+import net.csjava.logistics.feign.agency.AgencyScopeFeign;
+import net.csjava.logistics.util.BeanUtil;
+import net.csjava.logistics.vo.base.AreaSimpleVo;
+import net.csjava.logistics.vo.base.angency.AgencyScopeVo;
+import net.csjava.logistics.vo.base.angency.AgencySimpleVo;
+import net.csjava.logistics.vo.base.angency.AgencyVo;
+import net.csjava.logistics.vo.base.userCenter.SysUserVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 @RestController

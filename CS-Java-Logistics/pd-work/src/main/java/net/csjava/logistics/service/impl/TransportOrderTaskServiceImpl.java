@@ -6,8 +6,6 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import net.csjava.logistics.common.CustomIdGenerator;
 import net.csjava.logistics.entity.TransportOrderTask;
-import com.itheima.pinda.enums.transportorder.TransportOrderSchedulingStatus;
-import com.itheima.pinda.enums.transportorder.TransportOrderStatus;
 import net.csjava.logistics.mapper.TransportOrderTaskMapper;
 import net.csjava.logistics.service.ITransportOrderTaskService;
 import org.apache.commons.lang.StringUtils;

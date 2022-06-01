@@ -1,6 +1,6 @@
 package net.csjava.logistics.service;
 
-import com.itheima.pinda.common.utils.Result;
+import net.csjava.logistics.common.utils.Result;
 
 import java.util.List;
 import java.util.Map;

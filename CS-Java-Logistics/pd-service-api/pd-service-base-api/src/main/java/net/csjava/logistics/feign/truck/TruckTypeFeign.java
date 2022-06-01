@@ -1,15 +1,15 @@
 package net.csjava.logistics.feign.truck;
 
-import com.itheima.pinda.common.utils.PageResponse;
-import com.itheima.pinda.common.utils.Result;
-import com.itheima.pinda.DTO.truck.TruckTypeDto;
+
+import net.csjava.logistics.DTO.truck.TruckTypeDto;
+import net.csjava.logistics.common.utils.PageResponse;
+import net.csjava.logistics.common.utils.Result;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 import springfox.documentation.annotations.ApiIgnore;
 
 import java.math.BigDecimal;
 import java.util.List;
-
 
 @FeignClient(name = "pd-base")
 @RequestMapping("base/truck/type")

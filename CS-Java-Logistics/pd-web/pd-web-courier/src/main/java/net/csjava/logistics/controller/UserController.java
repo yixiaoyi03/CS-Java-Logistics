@@ -1,22 +1,15 @@
 package net.csjava.logistics.controller;
 
 
-import net.csjava.logistics.DTO.UserProfileDTO;
-import com.itheima.pinda.DTO.user.CourierScopeDto;
-import com.itheima.pinda.authority.api.AreaApi;
-import com.itheima.pinda.authority.api.OrgApi;
-import com.itheima.pinda.authority.api.UserApi;
-import com.itheima.pinda.authority.entity.auth.User;
-import com.itheima.pinda.authority.entity.common.Area;
-import com.itheima.pinda.authority.entity.core.Org;
-import com.itheima.pinda.base.R;
-import com.itheima.pinda.common.context.RequestContext;
-import com.itheima.pinda.common.utils.Result;
-import com.itheima.pinda.feign.user.CourierScopeFeign;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
+import net.csjava.logistics.DTO.UserProfileDTO;
+import net.csjava.logistics.DTO.user.CourierScopeDto;
+import net.csjava.logistics.common.context.RequestContext;
+import net.csjava.logistics.common.utils.Result;
+import net.csjava.logistics.feign.user.CourierScopeFeign;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

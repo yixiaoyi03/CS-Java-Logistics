@@ -1,34 +1,27 @@
 package net.csjava.logistics.controller;
-
-import com.itheima.pinda.DTO.TaskTransportDTO;
-import com.itheima.pinda.DTO.webManager.TaskTransportQueryDTO;
-import com.itheima.pinda.authority.api.AreaApi;
-import com.itheima.pinda.authority.api.OrgApi;
-import com.itheima.pinda.authority.api.UserApi;
-import com.itheima.pinda.authority.entity.core.Org;
-import com.itheima.pinda.base.R;
-import com.itheima.pinda.common.utils.PageResponse;
-import com.itheima.pinda.feign.OrderFeign;
-import com.itheima.pinda.feign.TransportOrderFeign;
-import com.itheima.pinda.feign.TransportTaskFeign;
-import com.itheima.pinda.feign.transportline.TransportTripsFeign;
-import com.itheima.pinda.feign.truck.TruckFeign;
-import com.itheima.pinda.feign.webManager.WebManagerFeign;
-import net.csjava.logistics.util.BeanUtil;
-import net.csjava.logistics.vo.work.PointDTO;
-import net.csjava.logistics.vo.work.TaskTransportVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
+import net.csjava.logistics.DTO.TaskTransportDTO;
+import net.csjava.logistics.DTO.webManager.TaskTransportQueryDTO;
+import net.csjava.logistics.common.utils.PageResponse;
+import net.csjava.logistics.feign.OrderFeign;
+import net.csjava.logistics.feign.TransportOrderFeign;
+import net.csjava.logistics.feign.TransportTaskFeign;
+import net.csjava.logistics.feign.transportline.TransportTripsFeign;
+import net.csjava.logistics.feign.truck.TruckFeign;
+import net.csjava.logistics.feign.webManager.WebManagerFeign;
+import net.csjava.logistics.util.BeanUtil;
+import net.csjava.logistics.vo.work.PointDTO;
+import net.csjava.logistics.vo.work.TaskTransportVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.stream.Collectors;
-
 
 /**
  * <p>

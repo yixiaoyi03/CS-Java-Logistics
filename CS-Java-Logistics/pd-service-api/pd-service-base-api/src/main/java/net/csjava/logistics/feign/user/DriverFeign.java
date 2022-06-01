@@ -1,8 +1,9 @@
 package net.csjava.logistics.feign.user;
 
-import com.itheima.pinda.DTO.user.TruckDriverDto;
-import com.itheima.pinda.DTO.user.TruckDriverLicenseDto;
-import com.itheima.pinda.common.utils.PageResponse;
+
+import net.csjava.logistics.DTO.user.TruckDriverDto;
+import net.csjava.logistics.DTO.user.TruckDriverLicenseDto;
+import net.csjava.logistics.common.utils.PageResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 import springfox.documentation.annotations.ApiIgnore;

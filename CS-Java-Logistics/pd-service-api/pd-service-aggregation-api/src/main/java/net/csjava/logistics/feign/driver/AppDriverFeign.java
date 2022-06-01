@@ -1,8 +1,9 @@
 package net.csjava.logistics.feign.driver;
 
-import com.itheima.pinda.DTO.AppDriverQueryDTO;
-import com.itheima.pinda.DTO.DriverJobDTO;
-import com.itheima.pinda.common.utils.PageResponse;
+
+import net.csjava.logistics.DTO.AppDriverQueryDTO;
+import net.csjava.logistics.DTO.DriverJobDTO;
+import net.csjava.logistics.common.utils.PageResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

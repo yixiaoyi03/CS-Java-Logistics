@@ -74,6 +74,12 @@
             <version>2.1.2.RELEASE</version>
             <!--<scope>provided</scope>-->
         </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-extension</artifactId>
+            <version>3.5.1</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
     <build>
         <plugins>

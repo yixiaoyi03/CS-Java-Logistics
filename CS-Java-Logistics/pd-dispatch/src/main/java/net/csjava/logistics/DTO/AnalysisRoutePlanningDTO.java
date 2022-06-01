@@ -1,6 +1,8 @@
 package net.csjava.logistics.DTO;
 
 
+import com.alibaba.nacos.common.utils.Md5Utils;
+import net.csjava.logistics.DTO.transportline.TransportLineDto;
 import net.csjava.logistics.entity.CacheLineDetailEntity;
 import net.csjava.logistics.entity.CacheLineEntity;
 import net.csjava.logistics.utils.IdUtils;

@@ -1,5 +1,6 @@
 package net.csjava.logistics.config;
 
+import com.alibaba.fastjson.parser.deserializer.EnumDeserializer;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;
@@ -11,10 +12,8 @@ import com.fasterxml.jackson.datatype.jsr310.deser.LocalTimeDeserializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalTimeSerializer;
-import com.itheima.pinda.common.converter.EnumDeserializer;
-import com.itheima.pinda.common.json.BigDecimalSerializer;
-import com.itheima.pinda.utils.DateUtils;
 import lombok.extern.slf4j.Slf4j;
+import net.csjava.logistics.common.json.BigDecimalSerializer;
 import org.springframework.boot.autoconfigure.jackson.Jackson2ObjectMapperBuilderCustomizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

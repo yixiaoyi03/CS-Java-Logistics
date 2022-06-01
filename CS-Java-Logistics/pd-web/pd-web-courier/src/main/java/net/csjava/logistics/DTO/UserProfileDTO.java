@@ -1,12 +1,11 @@
 package net.csjava.logistics.DTO;
 
-import com.itheima.pinda.authority.entity.common.Area;
+
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Builder;
 import lombok.Data;
 
 import java.io.Serializable;
-import java.util.List;
 
 @Data
 @Builder

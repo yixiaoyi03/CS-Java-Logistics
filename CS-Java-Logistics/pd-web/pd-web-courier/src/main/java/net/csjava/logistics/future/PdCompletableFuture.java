@@ -1,15 +1,12 @@
 package net.csjava.logistics.future;
 
-import com.itheima.pinda.DTO.OrderDTO;
-import com.itheima.pinda.DTO.TransportOrderDTO;
-import com.itheima.pinda.authority.api.AreaApi;
-import com.itheima.pinda.authority.api.OrgApi;
-import com.itheima.pinda.authority.entity.common.Area;
-import com.itheima.pinda.authority.entity.core.Org;
-import com.itheima.pinda.base.R;
-import com.itheima.pinda.feign.OrderFeign;
-import com.itheima.pinda.feign.TransportOrderFeign;
 
+import net.csjava.logistics.DTO.OrderDTO;
+import net.csjava.logistics.DTO.TransportOrderDTO;
+import net.csjava.logistics.feign.OrderFeign;
+import net.csjava.logistics.feign.TransportOrderFeign;
+
+import java.awt.geom.Area;
 import java.util.*;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;

@@ -2,8 +2,8 @@ package net.csjava.logistics.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.itheima.pinda.DTO.AppDriverQueryDTO;
-import com.itheima.pinda.DTO.DriverJobDTO;
+import net.csjava.logistics.DTO.AppDriverQueryDTO;
+import net.csjava.logistics.DTO.DriverJobDTO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;

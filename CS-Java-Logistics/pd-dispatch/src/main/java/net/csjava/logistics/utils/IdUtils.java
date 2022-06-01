@@ -1,6 +1,7 @@
 package net.csjava.logistics.utils;
 
-import com.itheima.pinda.common.utils.IdWorker;
+
+import net.csjava.logistics.common.utils.IdWorker;
 
 public class IdUtils {
     private static final IdWorker ID_WORKER = new IdWorker();

@@ -1,7 +1,8 @@
 package net.csjava.logistics.feign;
 
-import com.itheima.pinda.DTO.TaskPickupDispatchDTO;
-import com.itheima.pinda.common.utils.PageResponse;
+
+import net.csjava.logistics.DTO.TaskPickupDispatchDTO;
+import net.csjava.logistics.common.utils.PageResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 

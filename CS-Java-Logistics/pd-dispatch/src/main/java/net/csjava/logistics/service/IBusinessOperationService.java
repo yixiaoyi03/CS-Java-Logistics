@@ -2,10 +2,10 @@ package net.csjava.logistics.service;
 
 import net.csjava.logistics.DTO.OrderLineSimpleDTO;
 import net.csjava.logistics.DTO.OrderLineTripsTruckDriverDTO;
-import com.itheima.pinda.DTO.TaskTransportDTO;
+import net.csjava.logistics.DTO.TaskTransportDTO;
 
 import java.util.List;
-import java.util.Map;
+
 
 public interface IBusinessOperationService {
     /**

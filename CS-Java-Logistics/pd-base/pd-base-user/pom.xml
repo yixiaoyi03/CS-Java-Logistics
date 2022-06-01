@@ -8,10 +8,7 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>pd-base-user</artifactId>
-    <modelVersion>4.0.0</modelVersion>
-    <artifactId>pd-tools-user</artifactId>
     <description>当前登录用户信息注入模块</description>
     <name>${project.artifactId}</name>
 
@@ -39,7 +36,5 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
         </dependency>
-
     </dependencies>
-
 </project>

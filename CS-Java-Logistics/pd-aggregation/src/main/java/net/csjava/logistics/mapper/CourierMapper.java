@@ -2,7 +2,7 @@ package net.csjava.logistics.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.itheima.pinda.DTO.AppCourierQueryDTO;
+import net.csjava.logistics.DTO.AppCourierQueryDTO;
 import net.csjava.logistics.DTO.TaskPickupDispatchDTO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;

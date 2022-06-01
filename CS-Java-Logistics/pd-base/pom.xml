@@ -12,6 +12,42 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<name>pd-base</name>
 	<description>基础服务</description>
+	<artifactId>pd-tools</artifactId>
+	<packaging>pom</packaging>
+	<name>${project.artifactId}</name>
+	<description>公共模块</description>
+	<modules>
+		<module>pd-base-common</module>
+		<module>pd-base-core</module>
+		<module>pd-base-databases</module>
+		<module>pd-base-log</module>
+		<module>pd-base-swagger2</module>
+		<module>pd-base-user</module>
+		<module>pd-base-validator</module>
+		<module>pd-base-jwt</module>
+		<module>pd-base-dozer</module>
+		<module>pd-base-xss</module>
+		<module>pd-base-j2cache</module>
+	</modules>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.itheima</groupId>
+				<artifactId>pd-tools-core</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.itheima</groupId>
+				<artifactId>pd-tools-common</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.itheima</groupId>
+				<artifactId>pd-tools-databases</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<dependencies>
 		<!--项目依赖-->

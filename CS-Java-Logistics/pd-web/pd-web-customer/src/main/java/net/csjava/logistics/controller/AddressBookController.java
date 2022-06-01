@@ -35,7 +35,7 @@ public class AddressBookController {
 
     private final AddressBookFeign addressBookFeign;
 
-    private final AreaApi areaApi;
+    private final ArezaApi areaApi;
 
     public AddressBookController(AddressBookFeign addressBookFeign, AreaApi areaApi) {
         this.addressBookFeign = addressBookFeign;

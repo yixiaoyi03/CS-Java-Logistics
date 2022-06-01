@@ -26,6 +26,10 @@
         <module>pd-aggregation</module>
         <module>pd-druid</module>
         <module>pd-netty</module>
+        <module>pd-auth-entity</module>
+        <module>pd-auth-api</module>
+        <module>pd-gateway</module>
+        <module>pd-auth</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>

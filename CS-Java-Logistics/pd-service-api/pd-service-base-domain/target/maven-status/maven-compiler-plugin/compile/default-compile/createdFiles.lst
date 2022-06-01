@@ -1,0 +1,15 @@
+net\csjava\logistics\DTO\truck\TruckInsuranceDto.class
+net\csjava\logistics\DTO\user\TruckDriverLicenseDto.class
+net\csjava\logistics\DTO\base\GoodsTypeDto.class
+net\csjava\logistics\DTO\angency\AgencyScopeDto.class
+net\csjava\logistics\DTO\transportline\TransportLineTypeDto.class
+net\csjava\logistics\DTO\base\AreaDto.class
+net\csjava\logistics\DTO\angency\FleetDto.class
+net\csjava\logistics\DTO\truck\TruckTypeDto.class
+net\csjava\logistics\DTO\user\CourierScopeDto.class
+net\csjava\logistics\DTO\transportline\TransportTripsTruckDriverDto.class
+net\csjava\logistics\DTO\transportline\TransportTripsDto.class
+net\csjava\logistics\DTO\truck\TruckLicenseDto.class
+net\csjava\logistics\DTO\user\TruckDriverDto.class
+net\csjava\logistics\DTO\transportline\TransportLineDto.class
+net\csjava\logistics\DTO\truck\TruckDto.class
